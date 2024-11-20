@@ -1,0 +1,17 @@
+{
+  "name": "bff",
+  "version": "1.0.0",
+  "description": "Learn Backend For Frontend devs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx tsx index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.9.1",
+    "tsx": "^4.19.2"
+  }
+}
