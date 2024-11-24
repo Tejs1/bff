@@ -1,17 +1,24 @@
 {
   "name": "bff",
-  "version": "1.0.0",
-  "description": "Learn Backend For Frontend devs",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx tsx index.ts"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "module": "index.ts",
+  "type": "module",
   "devDependencies": {
-    "@types/node": "^22.9.1",
-    "tsx": "^4.19.2"
+    "@types/bun": "^1.1.13",
+    "drizzle-kit": "^0.28.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "dev": "bun run index.ts",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio"
+  },
+  "dependencies": {
+    "@libsql/client": "^0.14.0",
+    "dotenv": "^16.4.5",
+    "drizzle-orm": "^0.36.4"
   }
 }
